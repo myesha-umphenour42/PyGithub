@@ -42,16 +42,16 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github.GithubObject
-import github.PaginatedList
 
-import github.Repository
+import github.GithubObject
 import github.NamedUser
 import github.Organization
+import github.PaginatedList
+import github.Repository
 import github.TeamDiscussion
+import six
 
 from . import Consts
-import six
 
 
 class Team(github.GithubObject.CompletableGithubObject):

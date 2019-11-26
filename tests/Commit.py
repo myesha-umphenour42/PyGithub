@@ -30,8 +30,10 @@
 ################################################################################
 
 from __future__ import absolute_import
-from . import Framework
+
 import six
+
+from . import Framework
 
 
 class Commit(Framework.TestCase):

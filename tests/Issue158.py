@@ -26,8 +26,10 @@
 ################################################################################
 
 from __future__ import absolute_import
-from . import Framework
+
 import github
+
+from . import Framework
 
 
 class Issue158(Framework.TestCase):  # https://github.com/jacquev6/PyGithub/issues/158

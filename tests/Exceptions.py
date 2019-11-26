@@ -32,12 +32,14 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github
-from github.GithubException import IncompletableObject
+
 import pickle
 
-from . import Framework
+import github
+from github.GithubException import IncompletableObject
 from six.moves import range
+
+from . import Framework
 
 
 class Exceptions(Framework.TestCase):

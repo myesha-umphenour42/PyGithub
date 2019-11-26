@@ -49,32 +49,34 @@
 ################################################################################
 
 from __future__ import absolute_import
-import datetime
 
+import datetime
 import pickle
 import time
-import requests
+
+import github.Gist
+import github.GithubObject
+import github.License
+import github.NamedUser
+import github.PaginatedList
+import github.Topic
 import jwt
+import requests
+import six
 import urllib3
 
+from . import (
+    AuthenticatedUser,
+    Consts,
+    GithubException,
+    GitignoreTemplate,
+    HookDescription,
+    Installation,
+    InstallationAuthorization,
+    RateLimit,
+    Repository,
+)
 from .Requester import Requester
-from . import AuthenticatedUser
-import github.NamedUser
-import github.Gist
-import github.PaginatedList
-from . import Repository
-from . import Installation
-import github.License
-import github.Topic
-import github.GithubObject
-from . import HookDescription
-from . import GitignoreTemplate
-from . import RateLimit
-from . import InstallationAuthorization
-from . import GithubException
-
-from . import Consts
-import six
 
 DEFAULT_BASE_URL = "https://api.github.com"
 DEFAULT_STATUS_URL = "https://status.github.com"

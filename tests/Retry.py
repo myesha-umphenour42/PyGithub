@@ -27,14 +27,13 @@
 ################################################################################
 
 from __future__ import absolute_import
+
+import github
+import requests
 import urllib3
 from httpretty import httpretty
 
 from . import Framework
-
-import requests
-
-import github
 
 REPO_NAME = "PyGithub/PyGithub"
 

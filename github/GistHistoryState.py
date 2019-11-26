@@ -30,11 +30,11 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github.GithubObject
 
-import github.NamedUser
 import github.CommitStats
 import github.Gist
+import github.GithubObject
+import github.NamedUser
 
 
 class GistHistoryState(github.GithubObject.CompletableGithubObject):

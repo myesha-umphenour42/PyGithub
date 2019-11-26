@@ -86,58 +86,58 @@
 ################################################################################
 
 from __future__ import absolute_import
-import six.moves.urllib.parse
+
+import collections
 import datetime
 from base64 import b64encode
-import collections
 
-from deprecated import deprecated
-
-import github.GithubObject
-import github.PaginatedList
-import github.Invitation
 import github.Branch
-import github.IssueEvent
+import github.Clones
+import github.Commit
+import github.CommitComment
+import github.Comparison
 import github.ContentFile
-import github.Label
+import github.Download
+import github.Event
 import github.GitBlob
-import github.Organization
+import github.GitCommit
+import github.GithubObject
 import github.GitRef
 import github.GitRelease
 import github.GitReleaseAsset
-import github.Issue
-import github.Repository
-import github.PullRequest
-import github.RepositoryKey
-import github.NamedUser
-import github.Milestone
-import github.Project
-import github.Comparison
-import github.CommitComment
-import github.GitCommit
-import github.Team
-import github.Commit
+import github.GitTag
 import github.GitTree
 import github.Hook
-import github.Tag
-import github.GitTag
-import github.Download
+import github.Invitation
+import github.Issue
+import github.IssueEvent
+import github.Label
+import github.Milestone
+import github.NamedUser
+import github.Organization
+import github.PaginatedList
+import github.Path
 import github.Permissions
-import github.Event
+import github.Project
+import github.PullRequest
+import github.Referrer
+import github.Repository
+import github.RepositoryKey
 import github.SourceImport
-import github.StatsContributor
-import github.StatsCommitActivity
+import github.Stargazer
 import github.StatsCodeFrequency
+import github.StatsCommitActivity
+import github.StatsContributor
 import github.StatsParticipation
 import github.StatsPunchCard
-import github.Stargazer
-import github.Referrer
-import github.Path
-import github.Clones
+import github.Tag
+import github.Team
 import github.View
+import six
+import six.moves.urllib.parse
+from deprecated import deprecated
 
 from . import Consts
-import six
 
 
 class Repository(github.GithubObject.CompletableGithubObject):

@@ -29,8 +29,9 @@
 ################################################################################
 
 from __future__ import absolute_import
-import sys
+
 import os.path
+import sys
 
 className, attributeName, attributeType = sys.argv[1:4]
 if len(sys.argv) > 4:

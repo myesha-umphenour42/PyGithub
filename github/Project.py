@@ -23,11 +23,12 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import github.GithubObject
 import github.ProjectColumn
+import six
 
 from . import Consts
-import six
 
 
 class Project(github.GithubObject.CompletableGithubObject):

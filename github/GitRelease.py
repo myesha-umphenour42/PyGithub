@@ -36,10 +36,12 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 from os.path import basename
+
 import github.GithubObject
-import github.NamedUser
 import github.GitReleaseAsset
+import github.NamedUser
 import six
 
 

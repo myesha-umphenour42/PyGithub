@@ -31,9 +31,10 @@
 ################################################################################
 
 from __future__ import absolute_import
-from . import Framework
 
 import github
+
+from . import Framework
 
 
 class Branch(Framework.TestCase):

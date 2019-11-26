@@ -46,7 +46,6 @@ import textwrap
 
 import setuptools
 
-
 version = "1.44.1"
 
 tests_require = [

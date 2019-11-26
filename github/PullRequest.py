@@ -43,22 +43,23 @@
 ################################################################################
 
 from __future__ import absolute_import
-import datetime
-import six.moves.urllib.parse
-import github.GithubObject
-import github.PaginatedList
 
-import github.PullRequestMergeStatus
-import github.NamedUser
-import github.PullRequestPart
-import github.PullRequestComment
-import github.File
-import github.IssueComment
+import datetime
+
 import github.Commit
+import github.File
+import github.GithubObject
+import github.IssueComment
+import github.NamedUser
+import github.PaginatedList
+import github.PullRequestComment
+import github.PullRequestMergeStatus
+import github.PullRequestPart
 import github.PullRequestReview
+import six
+import six.moves.urllib.parse
 
 from . import Consts
-import six
 
 
 class PullRequest(github.GithubObject.CompletableGithubObject):

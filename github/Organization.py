@@ -42,20 +42,20 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import datetime
 
-import github.GithubObject
-import github.PaginatedList
-
-import github.Plan
-import github.Team
 import github.Event
-import github.Repository
-import github.Project
+import github.GithubObject
 import github.NamedUser
+import github.PaginatedList
+import github.Plan
+import github.Project
+import github.Repository
+import github.Team
+import six
 
 from . import Consts
-import six
 
 
 class Organization(github.GithubObject.CompletableGithubObject):

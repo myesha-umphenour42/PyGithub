@@ -32,12 +32,12 @@
 ################################################################################
 
 from __future__ import absolute_import
-import six.moves.urllib.parse
 
 import github.GithubObject
+import six
+import six.moves.urllib.parse
 
 from . import Consts
-import six
 
 
 class Label(github.GithubObject.CompletableGithubObject):

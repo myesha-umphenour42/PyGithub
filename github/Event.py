@@ -31,11 +31,11 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github.GithubObject
 
+import github.GithubObject
+import github.NamedUser
 import github.Organization
 import github.Repository
-import github.NamedUser
 
 
 class Event(github.GithubObject.NonCompletableGithubObject):

@@ -29,8 +29,10 @@
 ################################################################################
 
 from __future__ import absolute_import
-from . import Framework
+
 import github
+
+from . import Framework
 
 
 class Authentication(Framework.BasicTestCase):

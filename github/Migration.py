@@ -33,13 +33,13 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github.GithubObject
-import github.PaginatedList
 
+import github.GithubObject
 import github.NamedUser
+import github.PaginatedList
+import six
 
 from . import Consts
-import six
 
 
 class Migration(github.GithubObject.CompletableGithubObject):

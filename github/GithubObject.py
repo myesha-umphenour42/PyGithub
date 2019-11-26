@@ -33,12 +33,13 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import datetime
 from operator import itemgetter
 
-from . import GithubException
-from . import Consts
 import six
+
+from . import Consts, GithubException
 
 
 class _NotSetType:

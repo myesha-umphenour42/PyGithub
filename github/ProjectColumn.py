@@ -23,12 +23,13 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import github.GithubObject
 import github.Project
 import github.ProjectCard
+import six
 
 from . import Consts
-import six
 
 
 class ProjectColumn(github.GithubObject.CompletableGithubObject):

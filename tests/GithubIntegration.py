@@ -1,13 +1,14 @@
 from __future__ import absolute_import
-import jwt
-import json
-import time  # NOQA
-import sys
-import unittest
-import requests  # NOQA
-import datetime
-from github.GithubObject import GithubObject
 
+import datetime
+import json
+import sys
+import time  # NOQA
+import unittest
+
+import jwt
+import requests  # NOQA
+from github.GithubObject import GithubObject
 
 private_key = """
 -----BEGIN RSA PRIVATE KEY-----

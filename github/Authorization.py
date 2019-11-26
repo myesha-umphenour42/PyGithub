@@ -31,9 +31,9 @@
 ################################################################################
 
 from __future__ import absolute_import
-import github.GithubObject
 
 import github.AuthorizationApplication
+import github.GithubObject
 import six
 
 

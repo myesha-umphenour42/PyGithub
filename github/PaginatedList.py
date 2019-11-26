@@ -39,9 +39,8 @@
 
 from __future__ import absolute_import
 
-from six.moves.urllib.parse import parse_qs
-
 import six
+from six.moves.urllib.parse import parse_qs
 
 
 class PaginatedListBase:

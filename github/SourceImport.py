@@ -23,8 +23,9 @@
 ################################################################################
 
 from __future__ import absolute_import
-from github import Consts
+
 import github.GithubObject
+from github import Consts
 
 
 class SourceImport(github.GithubObject.CompletableGithubObject):

@@ -53,20 +53,21 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import base64
 import json
 import logging
 import mimetypes
 import os
 import re
-import requests
 import time
-import six.moves.urllib.parse
 from io import IOBase
 
-from . import Consts
-from . import GithubException
+import requests
 import six
+import six.moves.urllib.parse
+
+from . import Consts, GithubException
 
 
 class RequestsResponse:

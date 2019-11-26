@@ -27,11 +27,13 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import datetime
 
-from . import Framework
 import github
 import six
+
+from . import Framework
 
 
 # Replay data is forged to simulate bad things returned by Github

@@ -24,9 +24,10 @@
 ################################################################################
 
 from __future__ import absolute_import
-from . import Framework
 
 import datetime
+
+from . import Framework
 
 
 class Reaction(Framework.TestCase):

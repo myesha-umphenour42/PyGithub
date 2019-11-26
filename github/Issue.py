@@ -43,22 +43,23 @@
 ################################################################################
 
 from __future__ import absolute_import
-import six.moves.urllib.parse
-import datetime
-import github.GithubObject
-import github.PaginatedList
 
-import github.Repository
-import github.IssueEvent
-import github.Label
-import github.NamedUser
-import github.Milestone
+import datetime
+
+import github.GithubObject
 import github.IssueComment
+import github.IssueEvent
 import github.IssuePullRequest
+import github.Label
+import github.Milestone
+import github.NamedUser
+import github.PaginatedList
 import github.Reaction
+import github.Repository
+import six
+import six.moves.urllib.parse
 
 from . import Consts
-import six
 
 
 class Issue(github.GithubObject.CompletableGithubObject):

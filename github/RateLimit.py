@@ -28,9 +28,9 @@
 ################################################################################
 
 from __future__ import absolute_import
+
 import github.GithubObject
 import github.Rate
-
 from deprecated import deprecated
 
 
