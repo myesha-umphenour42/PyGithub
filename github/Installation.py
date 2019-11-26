@@ -69,7 +69,7 @@ class Installation(github.GithubObject.NonCompletableGithubObject):
             firstUrl="/installation/repositories",
             firstParams=url_parameters,
             headers=INTEGRATION_PREVIEW_HEADERS,
-            list_item='repositories'
+            list_item="repositories",
         )
 
     def _initAttributes(self):

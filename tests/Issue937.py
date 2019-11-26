@@ -32,7 +32,7 @@ class Issue937(Framework.TestCase):
         self.repo = self.user.get_repo("PyGithub")
 
     def testCollaboratorsAffiliation(self):
-        collaborators = self.repo.get_collaborators(affiliation='direct')
+        collaborators = self.repo.get_collaborators(affiliation="direct")
         self.assertListKeyEqual(collaborators, lambda u: u.login, ["hegde5"])
         with self.assertRaises(AssertionError):
-            self.repo.get_collaborators(affiliation='invalid_option')
+            self.repo.get_collaborators(affiliation="invalid_option")

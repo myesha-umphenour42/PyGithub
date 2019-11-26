@@ -153,7 +153,7 @@ class Project(github.GithubObject.CompletableGithubObject):
             self._requester,
             self.columns_url,
             None,
-            {"Accept": Consts.mediaTypeProjectsPreview}
+            {"Accept": Consts.mediaTypeProjectsPreview},
         )
 
     def create_column(self, name):
@@ -165,12 +165,11 @@ class Project(github.GithubObject.CompletableGithubObject):
         post_parameters = {"name": name}
         import_header = {"Accept": Consts.mediaTypeProjectsPreview}
         headers, data = self._requester.requestJsonAndCheck(
-            "POST",
-            self.url + "/columns",
-            headers=import_header,
-            input=post_parameters
+            "POST", self.url + "/columns", headers=import_header, input=post_parameters
         )
-        return github.ProjectColumn.ProjectColumn(self._requester, headers, data, completed=True)
+        return github.ProjectColumn.ProjectColumn(
+            self._requester, headers, data, completed=True
+        )
 
     def _initAttributes(self):
         self._body = github.GithubObject.NotSet
@@ -195,7 +194,9 @@ class Project(github.GithubObject.CompletableGithubObject):
         if "created_at" in attributes:  # pragma no branch
             self._created_at = self._makeDatetimeAttribute(attributes["created_at"])
         if "creator" in attributes:  # pragma no branch
-            self._creator = self._makeClassAttribute(github.NamedUser.NamedUser, attributes["creator"])
+            self._creator = self._makeClassAttribute(
+                github.NamedUser.NamedUser, attributes["creator"]
+            )
         if "html_url" in attributes:  # pragma no branch
             self._html_url = self._makeStringAttribute(attributes["html_url"])
         if "id" in attributes:  # pragma no branch

@@ -48,7 +48,10 @@ class ContentFile(Framework.TestCase):
         self.assertEqual(len(self.file.content), 10212)
         self.assertEqual(len(self.file.decoded_content), 7531)
         self.assertEqual(self.file.sha, "5628799a7d517a4aaa0c1a7004d07569cd154df0")
-        self.assertEqual(self.file.download_url, "https://raw.githubusercontent.com/jacquev6/PyGithub/master/README.md")
+        self.assertEqual(
+            self.file.download_url,
+            "https://raw.githubusercontent.com/jacquev6/PyGithub/master/README.md",
+        )
 
         # test __repr__() based on this attributes
         self.assertEqual(self.file.__repr__(), 'ContentFile(path="ReadMe.md")')

@@ -45,7 +45,9 @@ class InputFileContent(object):
         """
 
         assert isinstance(content, (str, six.text_type)), content
-        assert new_name is github.GithubObject.NotSet or isinstance(new_name, (str, six.text_type)), new_name
+        assert new_name is github.GithubObject.NotSet or isinstance(
+            new_name, (str, six.text_type)
+        ), new_name
         self.__newName = new_name
         self.__content = content
 
