@@ -1,5 +1,3 @@
-from __future__ import absolute_import
-import six
 # -*- coding: utf-8 -*-
 
 ############################ Copyrights and license ############################
@@ -41,6 +39,8 @@ import six
 
 from six.moves.urllib.parse import parse_qs
 
+from __future__ import absolute_import
+import six
 
 class PaginatedListBase:
     def __init__(self):
